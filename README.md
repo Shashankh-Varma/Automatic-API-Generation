@@ -1,75 +1,59 @@
-# apis
+LoopBack 4 API Application
+This application was generated using the LoopBack 4 CLI. It is a modern, TypeScript-based backend service designed for scalability and maintainability.
 
-This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
-[initial project layout](https://loopback.io/doc/en/lb4/Loopback-application-layout.html).
+🚀 Getting Started
+Prerequisites
+Node.js (LTS version recommended)
 
-## Install dependencies
+NPM (installed with Node)
 
-By default, dependencies were installed when this application was generated.
-Whenever dependencies in `package.json` are changed, run the following command:
+Installation
+By default, dependencies are installed during generation. If you change package.json, run:
 
-```sh
+Bash
 npm install
-```
+To install only the exact versions resolved in package-lock.json:
 
-To only install resolved dependencies in `package-lock.json`:
-
-```sh
+Bash
 npm ci
-```
-
-## Run the application
-
-```sh
+Running the App
+Bash
 npm start
-```
+Once started, you can access the application at: http://127.0.0.1:3000
 
-You can also run `node .` to skip the build step.
+🛠 Project Commands
+Build & Development
+npm run build: Incrementally build the project.
 
-Open http://127.0.0.1:3000 in your browser.
+npm run rebuild: Force a full build by cleaning up cached artifacts.
 
-## Rebuild the project
+node .: Run the application while skipping the build step.
 
-To incrementally build the project:
+Code Quality
+npm run lint: Check for code style and formatting issues.
 
-```sh
-npm run build
-```
+npm run lint:fix: Automatically fix linting and style issues.
 
-To force a full build by cleaning up cached artifacts:
+npm test: Run the automated test suite.
 
-```sh
-npm run rebuild
-```
+Database & Documentation
+npm run migrate: Sync your database schemas with your defined models.
 
-## Fix code style and formatting issues
+npm run openapi-spec: Generate an OpenAPI (Swagger) specification file.
 
-```sh
-npm run lint
-```
+Containerization
+npm run docker:build: Build a Docker image for the application.
 
-To automatically fix such issues:
+npm run docker:run: Run the application inside a Docker container.
 
-```sh
-npm run lint:fix
-```
+📂 Project Structure
+src/models: Defines the data shape and business entities.
 
-## Other useful commands
+src/repositories: Handles data access and connects models to data sources.
 
-- `npm run migrate`: Migrate database schemas for models
-- `npm run openapi-spec`: Generate OpenAPI spec into a file
-- `npm run docker:build`: Build a Docker image for this application
-- `npm run docker:run`: Run this application inside a Docker container
+src/controllers: Implements the REST API and contains the business logic.
 
-## Tests
+src/datasources: Configurations for database or external service connections.
 
-```sh
-npm test
-```
-
-## What's next
-
-Please check out [LoopBack 4 documentation](https://loopback.io/doc/en/lb4/) to
-understand how you can continue to add features to this application.
-
-[![LoopBack](https://github.com/loopbackio/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png)](http://loopback.io/)
+📖 Learn More
+To continue adding features, such as new controllers or custom middleware, please check out the LoopBack 4 documentation.
